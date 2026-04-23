@@ -29,17 +29,15 @@ Library Manager - учебный проект для изучения принц
 
 - LibraryCore.cs — основная логика библиотеки
 - SearchService.cs — поиск книг
-- StatisticsService.cs — статистика и отчёты
+- StorageService.cs — сохранение и загрузка данных
 
-Слой интерфейса (Interface/ + Views/)
+Слой интерфейса
 
 - MainWindow.xaml/.cs — главное окно
-- AddBookWindow.xaml/.cs — окно добавления книги
 
 Вспомогательный слой (Utils/)
 
 - ValidationHelper.cs — валидация данных
-- FormatterHelper.cs — форматирование вывода
 
 Структура проекта (Visual Studio Solution)
 
@@ -57,8 +55,8 @@ docs/ — README, документация
 
 Автор
 
-[Лукашов], группа [206ПРОГ]
+Лукашов Матвей, группа ДКИП206ПРОГ
 
 Дата
 
-[23.04.2026]
+23.04.2026
