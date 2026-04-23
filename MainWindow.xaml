@@ -1,0 +1,27 @@
+﻿<Window x:Class="LibraryManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Library Manager" Height="500" Width="900">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+            <Button Name="BtnInit" Content="Инициализация" Width="120" Margin="0,0,10,0" Click="BtnInit_Click"/>
+            <Button Name="BtnAddBook" Content="Добавить книгу" Width="120" Margin="0,0,10,0" Click="BtnAddBook_Click"/>
+            <Button Name="BtnAddReader" Content="Добавить читателя" Width="140" Margin="0,0,10,0" Click="BtnAddReader_Click"/>
+            <Button Name="BtnIssueBook" Content="Выдать книгу" Width="120" Margin="0,0,10,0" Click="BtnIssueBook_Click"/>
+            <Button Name="BtnReturnBook" Content="Вернуть книгу" Width="120" Click="BtnReturnBook_Click"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0,0,0,10">
+            <TextBox Name="TbSearch" Width="250" Margin="0,0,10,0"/>
+            <Button Name="BtnSearch" Content="Поиск по названию" Width="150" Click="BtnSearch_Click"/>
+        </StackPanel>
+
+        <DataGrid Name="BooksGrid" Grid.Row="2" AutoGenerateColumns="True"/>
+    </Grid>
+</Window>
